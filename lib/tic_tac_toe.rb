@@ -126,6 +126,7 @@ def winner(board)
  end
 end
 
+#call play until game is either a win or a draw
 def play(board)
   until over?(board)
     turn(board);
