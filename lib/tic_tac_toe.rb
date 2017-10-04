@@ -11,6 +11,7 @@ WIN_COMBINATIONS = [
   [2,4,6], #right diagonal win
 ]
 
+#display the board and populate spaces according the board array
 def display_board(board="")
   rows = [" #{board[0]} | #{board[1]} | #{board[2]} ",\
   " #{board[3]} | #{board[4]} | #{board[5]} ",\
