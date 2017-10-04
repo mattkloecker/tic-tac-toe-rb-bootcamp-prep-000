@@ -103,18 +103,22 @@ def won?(board)
     return false
 end
 
+#check if the board is full
 def full?(board)
   !board.find { |i| i == " " || i == ""}
 end
 
+#check if the board is at a draw
 def draw?(board)
   !won?(board) && full?(board)
 end
 
+#check if the game is over (all spots full)
 def over?(board)
   won?(board) || draw?(board) || full?(board);
 end
 
+#return the winner
 def winner(board)
  won = won?(board)
   if won
