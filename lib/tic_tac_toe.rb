@@ -98,9 +98,9 @@ def won?(board)
           return win_index
 
         end
+    end
   else
     return false
-  end  
 end
 
 def full?(board)
